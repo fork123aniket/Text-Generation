@@ -15,9 +15,9 @@ The average loss and associated model accuracy are printed after every epoch. Fu
 ## Samples
 ### Input text sequence from *The Republic by Plato* dataset
 ```
-when he said that a man when he grows old may learn many things for he can no more learn much than he can 
-run much youth is the time for any extraordinary toil of course and therefore calculation and geometry 
-and all the other elements of instruction which are a
+when he said that a man when he grows old may learn many things for he can no more learn much than he 
+can run much youth is the time for any extraordinary toil of course and therefore calculation and 
+geometry and all the other elements of instruction which are a
 ```
 ### Generated text sequence
 ```
