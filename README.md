@@ -7,7 +7,7 @@ This repository demonstrates the word-level language modelling using LSTM (Long 
 ## Usage
 - `load_doc()` loads the data and `clean_doc()` preprocesses the data to make it suitable for training the LSTM model. Moreover, `save_doc()` is used to save the data to the desired path attributed to `out_filename` variable.
 - `build_model()` builds the model.
-The average loss and associated model accuracy are printed after every epoch. Furthermore, to train a new network, run `Text Generation.py`. To extend the model to use pre-trained GloVe embeddings, please set `pre_trained` variable to `True`. Besides, all hyperparamters to control training and generation of the new text sequences are provided in the given .py file.
+The average loss and associated model accuracy are printed after every epoch. Furthermore, to train a new network, run `Text Generation.py`. To extend the model to use pre-trained GloVe embeddings, please set `pre_trained` variable to `True`. Besides, all hyperparamters to control training and generation of the new text sequences are provided in the given `.py` file.
 ### Generation
 - `generate_seq()` uses the training dataset to randomly sample the line (set of words) from it and then create vocabulary dictionary for the words lie in the randomly sampled sequence.
 - `generate_seq()` then generates the words using the preTrained LSTM-based language model.
