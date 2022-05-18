@@ -138,7 +138,6 @@ def build_model(mem_cell, drop, num_layers, pre_trained=False):
 	return model
 
 
-# print(model.summary())
 # compile model
 model = build_model(mem_cell, drop, num_layers, pre_trained)
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
@@ -161,7 +160,6 @@ def generate_seq(model, tokenizer, seq_length, seed_text, n_words):
 		# truncate sequences to a fixed length
 		encoded = pad_sequences([encoded], maxlen=seq_length, truncating='pre')
 		# predict probabilities for each word
-		# yhat = model.predict_classes(encoded, verbose=0)
 		predict_x = model.predict(encoded)
 		yhat = np.argmax(predict_x, axis=1)
 		# map predicted word index to word
